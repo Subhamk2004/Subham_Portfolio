@@ -63,9 +63,10 @@ a{
 }
 .head2{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap:2%;
     margin-top: 10%;
+    padding-left: 10%;
     
 }
 .sechead{
