@@ -216,3 +216,23 @@ a{
 .imgsocial{
     height:5vw;
 }
+.war{
+    background-color: rgb(247, 247, 50);
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-radius:10px ;
+    position: sticky;
+    top:0;
+    gap:20px;
+}
+.warn{
+    margin-top: 14px;
+}
+.warny{
+    width:25px;
+    height:25px;
+}
