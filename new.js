@@ -1,4 +1,23 @@
 $(document).ready(function(){
+
+    $(".war").hide(0);
+
+let details = navigator.userAgent; 
+
+let regexp = /android|iphone|kindle|ipad/i; 
+
+let isMobileDevice = regexp.test(details); 
+
+if (isMobileDevice) { 
+    $(".war").show(500);
+} else { 
+	console.log("You are using Desktop"); 
+}
+
+
+
+
+
     $('#main_nav').hide(0);
     $(".navimg").mouseenter(function(){
         $('#main_nav').slideDown(600);
