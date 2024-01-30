@@ -67,7 +67,7 @@ a{
     gap:2%;
     margin-top: 10%;
     padding-left: 10%;
-    
+
 }
 .sechead{
     font-size: 4vw;
@@ -236,4 +236,62 @@ a{
 .warny{
     width:25px;
     height:25px;
+}
+@media screen and (max-width:480px){
+    .mypic{
+        height:40vh;
+    }
+    .picdata{
+        display: flex;
+        flex-direction: column;
+    }
+    .frontp{
+        font-size: 4.2vw;
+    }
+    .sechead{
+        font-size:5vw;
+    }
+    .head{
+        font-size: 8vw;
+    }.navimg{
+        height:6vh;
+        width:6vw;
+    }
+    #main_nav{
+        width:60vw;
+    }
+    .nav_list{
+        font-size: 4.3vw;
+    }
+    #abouth2{
+        font-size: 6vw;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .aboutpara{
+        font-size: 4.3vw;
+    }
+    .skillh2{
+        font-size: 6vw;
+        margin-top: 10%;
+    }
+    .certimg{
+        height:14vh;
+        width:37vw;
+    }
+    .certbox{
+        height:auto;
+        width:auto;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .cercont{
+        display: flex;
+        justify-content: center;
+    }
+    code{
+        font-size: 3.6vw;
+    }
+
 }
