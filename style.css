@@ -18,7 +18,7 @@ body{
     height: 50px;
     border-radius: 80px;
     border: solid 0px;
-    background-color: rgba(29, 29, 44, 0.74);
+    background-color: rgb(29, 29, 44);
     margin-top: 30px;
     display: flex;
     flex-direction: row;
@@ -26,6 +26,8 @@ body{
     align-items: center;
     box-shadow: 0 0 0 1px rgb(12, 12, 34);
     transition: all 0.4s ease;
+    position: fixed;
+    z-index: 1000;
 }
 
 .navbar:hover{
@@ -147,12 +149,12 @@ body{
 #random_imgo1{
     top: 30vh;
     left: 40vh;
-    opacity: 0.3;
+    opacity: 0.7;
 }
 #random_imgo2{
     top: 25vh;
     left: 70vh;
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 @keyframes bounce {
@@ -179,24 +181,242 @@ body{
 .landing_main_div{
     width: max(650px, 65vw);
     position: absolute;
-    height: 600px;
+
     display: flex;
     flex-direction: row;
-    z-index: 100;
-    background-color: rgb(33, 34, 44);
-    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
     margin-top: 100px;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(50, 51, 66, 0.603);
+    border-radius: 20px;
+    border: solid 0px;
+    z-index: 100;
+}
+
+.bg_box{
+    position: absolute;
+    z-index: 10;
+    width: 99.5%;
+    height: 99.5%;
+    overflow: hidden;
+    border-radius:20px;
+    border: solid 0px;
+    filter: blur(3px);
+}
+.bg_img{
+    width: 100%;
+    height: 100%;
 }
 
 .texts , .photo{
-    width: 49%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+.texts{
+    margin-left: 20px;
+    font-size: min(1.5vw , 30px);
+    width: 60%;
+}
+.photo{
+    width: 40%;
 }
 .texts h1{
     margin-top: 5px;
 }
 .profile_img{
+    width: max(450px, 31.3vw);
+}
+
+.hello{
+    color:rgb(185, 255, 22);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.wave{
+    width: 45px;
+    animation: alternate waves 0.5s linear infinite;
+}
+@keyframes waves{
+    to{
+        transform: rotate(45deg);
+    }
+}
+.name{
+    color: aliceblue;
+}
+.designation{
+    -webkit-text-stroke: 2px rgb(232, 221, 241);
+    font-size: 40px;
+    color: rgb(24, 15, 41);
+}
+.resume_btn , .in{
+    height: min(6vw , 60px);
+    width: min(10vw , 160px);
+    border-radius:40px;
+    border: solid 0px;
+    margin-top: 40px;
+    background-color:rgb(185, 255, 22);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+.resume_btn:hover , .in:hover{
+    cursor: pointer;
+    height: 47px;
+    width: 110px;
+    border: double 5px rgb(58, 56, 56);
+}
+.in{
+    background-color: rgb(58, 58, 230);
+}
+.btns{
+    gap: 15px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/************line break ***********/
+.line_break{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 130px;
+    gap: 15px;
+}
+.hrs{
+    width: 40%;
+    height: 1px;
+    border: solid 0px;
+    background-color: white;
+}
+.capsule{
+    width:40px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    border: solid 1px white;
+    border-radius: 20px;
+}
+
+/************about section ***********/
+
+.about_me{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about_h1{
+    color: white;
+    margin-top: 20px;
+}
+
+.about_para{
+    color: white;
+    width: min(80% , 1200px);
+    font-size: min(1.6vw , 22px);
+    margin-top: 10px;
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: min(2.3vw , 35px);
+}
+
+.about_box{
+    width: min(50vw , 1000px);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    gap: 10px;
+}
+.point{
+    width: 10px;
+    height: 10px;
+    border-radius: 90%;
+    background-color:rgb(185, 255, 22);
+}
+.flash{
+    background-color:rgba(185, 255, 22, 0.226);
+    width: 30px;
+    height: 30px;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: flashing 0.5s linear infinite alternate;
+}
+
+@keyframes flashing {
+    to{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.about_content_box{
+    width: min(90% , 600px);
+    /* border: solid 1px white; */
+    background-color: rgba(131, 131, 139, 0.356);
+    height: min(4vw , 60px);
+    display:flex;
+    font-size: min(1.7vw, 20px);
+    border-radius:8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+.about_imgs , .about_content_para{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+}
+.about_imgs{
+    width: min(2vw, 50px);
+}
+.about_content_box:hover{
+    height: 30vh;
+    color:rgb(185, 255, 22);
+    font-size: min(2vw , 25px);
+    font-weight: 500;
+}
+.about_content_box:hover .about_imgs {
+    visibility: visible;
+    height: auto;
+    width: min(10vw , 50px);
+    margin-top: 10px;
+    opacity: 1;
+}
+.about_content_box:hover .about_content_para {
+    visibility: visible;
+    height: auto;
+    width: 95%;
+    color: aliceblue;
+    font-size: min(1.5vw , 17px);
+    margin-top: 10px;
+    text-align: justify;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    opacity: 1;
 }
