@@ -58,14 +58,6 @@ a{
     transition: all 0.8s ease;
 }
 
-.nav_list:hover{
-    background-color: rgba(92, 95, 99, 0.562);
-    border-radius: 10px;
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    font-weight: 400;
-}
 
 /***********main*****************/
 
@@ -184,7 +176,6 @@ a{
 .landing_main_div{
     width: max(650px, 65vw);
     position: absolute;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -235,7 +226,7 @@ a{
     margin-top: 5px;
 }
 .profile_img{
-    width: max(450px, 31.3vw);
+    width: max(370px, 22vw);
 }
 
 .hello{
@@ -384,6 +375,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
@@ -391,7 +383,6 @@ a{
 .about_imgs , .about_content_para{
     visibility: hidden;
     height: 0;
-    width: 0;
     opacity: 0;
     transition: all 0.7s ease-in-out;
 }
@@ -424,9 +415,18 @@ a{
     margin-bottom: 10px;
     opacity: 1;
 }
+.dropdown{
+    position: absolute;
+    width: 30px;
+    margin-right: 15px;
+    right: 0;
+}
+.about_content_box:hover .dropdown{
+    display: none;
+}
 
 /************skills************/
-#skills{
+.my_skills{
     color: aliceblue;
     display: flex;
     flex-direction: column;
@@ -465,5 +465,379 @@ a{
     border: solid 0px;
     height: 1.5px;
     background-color: greenyellow;
+}
+.skill_img_box{
+    width:95%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: min(2.4vw , 40px);
+    margin-bottom: 10px;
+}
+.outer_box{
+    width: min(7vw , 100px);
+    height: min(7vw , 100px);
+    background-color: rgba(29, 29, 41, 0.151);
+    box-shadow: 3px 3px 5px rgb(16, 20, 14);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.skill_imgs{
+    width: min(5.5vw , 90px);
+    height: auto;
+    border-radius: 100px;
+}
+.outer_box:hover{
+    width: min(8vw , 120px);
+    height: min(8vw , 120px);
+}
+.vertical_hr{
+    height: 75px;
+    width: 1px;
+    border: solid 0px;
+    background-color: antiquewhite;
+    transition: all 0.5s ease;
+}
+.skills_box:hover .vertical_hr{
+    border: solid 0px;
+    width:2px;
+    height: 70px;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px greenyellow;
+}
+
+/***********projects***********/
+
+.my_projects{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.project_container{
+    width: min(90% , 1500px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    margin-top: 20px;
+}
+.project_imgs{
+    height: min(35vw, 450px);
+    border-radius: 20px;
+}
+
+.links{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.link{
+    width: 30px;
+}
+
+.project_img_box{
+    width: min(35vw, 450px);
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.project_content_box{
+    width: min(435w, 450px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.popup{
+    background-color: rgb(44, 47, 49);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: max(90px, 6.5vw);
+    font-size: min(2vw , 25px);
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(207, 212, 205);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: transform 0.4s ease , width 0.4s ease;
+    overflow: hidden;
+}
+.popup p{
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.project_content_box:hover{
+    box-shadow: 0 0 5pc greenyellow;
+    border-radius: 20px;
+}
+.project_content_box:hover .popup{
+    transform: translateY(50px);
+    width:130%;
+    height:auto;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+.project_content_box:hover .popup p{
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    font-weight: 400;
+    text-align: justify;
+    width: 95%;
+    color: aliceblue;
+    font-size: min(1.8vw , 20px);
+}
+
+/********contact********/
+
+.follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    margin-top: 20px;
+}
+.socials_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+}
+.socials{
+    width: min(5vw , 60px);
+    height: min(5vw , 60px);
+    transition: all 0.5s ease;
+}
+
+.socials:hover{
+    transform: translateY(-10px);
+    width: min(6vw , 70px);
+    height: min(6vw , 70px);
+}
+
+/********mobile view*************/
+
+
+@media screen and (max-width:500px)
+{
+    /********navbar***********/
+    .navbar{
+        width: 330px;
+    }
+    .nav_list{
+        font-size: 12px;
+    }
+    .nav_container{
+        font-size: 13px;
+    }
+    .navbar:hover{
+        width: 340px;
+    }
+
+    /*******main_page*********/
+    .main{
+        margin-top: 0px;
+    }
+    .landing_page{
+        margin-bottom: -100px;
+    }
+    .landing_main_div{
+        width: 330px;
+    }
+    .hello, .name{
+        font-size: 13px;
+    }
+    .designation{
+        font-size: 20px;
+        -webkit-text-stroke: 1px rgb(232, 221, 241);
+    }
+    .photo{
+        overflow: hidden;
+    }
+    .profile_img{
+        width: 160px;
+    }
+    .wave{
+        width: 30px;
+    }
+    #random_imgo1 , #random_imgo3, #random_imgo2{
+        display: none;
+    }
+    .btns{
+        gap: 5px;
+    }
+    .resume_btn, .in{
+        font-size: 13px;
+        width: 80px;
+        height: 40px;
+    }
+    .in{
+        color: aliceblue;
+    }
+    .resume_btn:hover, .in:hover{
+        width: 100px;
+    }
+
+    /***********about***********/
+
+    .about_h1{
+        font-size: 20px;
+    }
+    .about_para{
+        font-size: 13px;
+        line-height: 18px;
+        width: 92%;
+    }
+    .flash{
+        position: absolute;
+        left: 7%;
+    }
+    .about_content_box{
+        height: 40px;
+        font-size: 14px;
+        width: min(90% , 600px);
+        margin-left: 20px;
+    }
+    .about_me{
+        margin-bottom: -80px;
+    }
+    .about_box{
+        width: 80%;
+        margin-top: 10px;
+    }
+    .about_content_box:hover{
+        font-size: 16px;
+        overflow: scroll;
+    }
+    .about_content_box:hover .about_content_para{
+        font-size: 12px;
+    }
+    /*******skills***********/
+
+    .skills_h1{
+        font-size: 20px;
+    }
+    .skills_box{
+        width: 90%;
+    }
+    .skill_imgs{
+        width: 30px;
+    }
+    .my_skills{
+        margin-bottom: -100px;
+    }
+    .appear_hr{
+        width: 100%;
+    }
+    .skills_para{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .vertical_hr{
+        height: 30px;
+    }
+    .outer_box{
+        width: 35px;
+        height: 35px;
+    }
+    .skills_box:hover .vertical_hr{
+        height: 30px;
+    }
+
+    /********projects********/
+
+    .projects_h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .project_container{
+        width: 80%;
+        gap: 60px;
+    }
+    .my_projects{
+        margin-bottom: -100px;
+    }
+    .project_content_box{
+        width: 90%;
+    }
+    .popup{
+        border-radius: 10px;
+        font-size: 14px;
+    }
+    .project_img_box{
+        width: 100%;
+        height: 250px;
+    }
+    .project_imgs{
+        width: 100%;
+        height: 250px;
+    }
+
+    .popup p{
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    .project_content_box:hover{
+        box-shadow: 0 0 35px greenyellow;
+        border-radius: 20px;
+    }
+    .project_content_box:hover .popup{
+        transform: translateY(50px);
+        width:120%;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        background: linear-gradient(40deg ,rgba(131, 173, 68, 0.911) , rgb(73, 73, 92));
+    }
+    .project_content_box:hover .popup p{
+        visibility: visible;
+        opacity: 1;
+        font-weight: 400;
+        text-align: justify;
+        width: 95%;
+        color: aliceblue;
+        font-size: 13px;
+    }
+    /********socials***********/
+
+    .follow_h1{
+        font-size: 20px;
+    }
+    .socials{
+        width: 45px;
+        height: 45px;
+    }
+    .socials:hover{
+        width: 50px;
+        height: 50px;
+    }
+    
 
 }

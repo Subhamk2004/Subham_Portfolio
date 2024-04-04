@@ -17,15 +17,23 @@
 <body>
     <nav class="navbar">
         <div class="nav_container">
-            <p class="nav_list">About</p>
-            <p class="nav_list">Skills</p>
+            <a href="#about" class="nav_list">
+                About
+            </a>
+            <a href="#skills" class="nav_list">
+                Skills
+            </a>
         </div>
-        <div class="nav_container">
+        <a href="#" class="nav_container">
             HOME
-        </div>
+        </a>
         <div class="nav_container">
-            <p class="nav_list">Projects</p>
-            <p class="nav_list">Contact</p>
+            <a href="#projects">
+                <p class="nav_list">Projects</p>
+            </a>
+            <a href="#contact">
+                <p class="nav_list">Contact</p>
+            </a>
         </div>
     </nav>
     <div class="main">
@@ -53,8 +61,14 @@
                         <h1 class="name">I'm Subham Kumar</h1>
                         <h1 class="designation">Web Developer</h1>
                         <div class="btns">
-                            <button class="resume_btn">Resume</button>
-                            <button class="in">LinkdIn</button>
+                            <a download="Subham's Resume" href="Subham's_Resume (1).pdf">
+                                <button class="resume_btn">Resume</button>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/subham-kumar-73b98b252?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiKUH72wFQUK9ZmVhPQw3eg%3D%3D">
+                                <button class="in">LinkdIn</button>
+                            </a>
+
                         </div>
 
                     </div>
@@ -75,14 +89,14 @@
                 </div>
             </div>
         </div>
-        <div class="line_break">
+        <div class="line_break" id="about">
             <hr class="hrs">
             <div class="capsule">
                 |
             </div>
             <hr class="hrs">
         </div>
-        <div id="about" class="about_me">
+        <div class="about_me">
             <h1 class="about_h1">About Myself</h1>
             <p class="about_para">
                 Hey there! 👋 I'm Subham Kumar, a passionate web developer, skilled programmer, and enthusiastic
@@ -96,6 +110,7 @@
                 <div class="about_content_box">
                     <img class="about_imgs" src="images/web.png" alt="">
                     Web Developer
+                    <img src="images/dropdown1.png" alt="" class="dropdown">
                     <p class="about_content_para">
                         Crafting responsive, user-friendly websites with <code style="color:greenyellow">HTML, CSS, and JavaScript, jQuery, React,
                         Flutter</code> etc. Proficient in
@@ -110,6 +125,7 @@
                 <div class="about_content_box">
                     <img class="about_imgs" src="images/coding.png" alt="">
                     CP Enthusiast
+                    <img src="images/dropdown1.png" alt="" class="dropdown">
                     <p class="about_content_para">
                         Enthusiastic participant on platforms like Codeforces, LeetCode, and HackerRank.
                         <code style="color:greenyellow">1300</code> Rating on CF, 6 ⭐ on hackerrank in problem solving
@@ -125,6 +141,7 @@
                 <div class="about_content_box">
                     <img class="about_imgs" src="images/code.png" alt="">
                     Programming
+                    <img src="images/dropdown1.png" alt="" class="dropdown">
                     <p class="about_content_para">
                         Fluent in <code style="color:greenyellow">C++ and Python</code>
                         with a knack for algorithms and data structures.
@@ -142,6 +159,7 @@
                 <div class="about_content_box">
                     <img class="about_imgs" src="images/experience.png" alt="">
                     Past Experience
+                    <img src="images/dropdown1.png" alt="" class="dropdown">
                     <p class="about_content_para">
                         1) Intership at <a href="">Intern Army</a>
                     </p>
@@ -157,6 +175,7 @@
                 <div class="about_content_box">
                     <img class="about_imgs" src="images/education.png" alt="">
                     Education
+                    <img src="images/dropdown1.png" alt="" class="dropdown">
                     <p class="about_content_para">
                         Pursuing Bachelor of Engineering in Computer Engineering from AIT Pune
                         2026
@@ -173,14 +192,14 @@
                 </div>
             </div>
         </div>
-        <div class="line_break">
+        <div class="line_break" id="skills">
             <hr class="hrs">
             <div class="capsule">
                 |
             </div>
             <hr class="hrs">
         </div>
-        <div id="skills" class="my_skills">
+        <div class="my_skills">
             <h1 class="skills_h1">My Skills</h1>
             <div class="skills_box">
                 <p class="skills_para">
@@ -190,15 +209,208 @@
                 </p>
                 <hr class="appear_hr">
                 <div class="skill_img_box">
-                    <img src="" alt="" class="skill_imgs">
-                    <img src="" alt="" class="skill_imgs">
-                    <img src="" alt="" class="skill_imgs">
-                    <img src="" alt="" class="skill_imgs">
-                    <img src="" alt="" class="skill_imgs">
-                    <img src="" alt="" class="skill_imgs">
+                    <div class="outer_box">
+                        <img src="images/js.png" alt="" class="skill_imgs">
+                    </div>
+                    <hr class="vertical_hr">
+                    <div class="outer_box">
+                        <img src="images/c++.png" alt="" class="skill_imgs">
+                    </div>
+                    <hr class="vertical_hr">
+                    <div class="outer_box">
+                        <img src="images/flutter.png" alt="" class="skill_imgs">
+                    </div>
+                    <hr class="vertical_hr">
+                    <div class="outer_box">
+                        <img src="images/vs.png" alt="" class="skill_imgs">
+                    </div>
+                    <hr class="vertical_hr">
+                    <div class="outer_box">
+                        <img src="images/react.png" alt="" class="skill_imgs">
+                    </div>
+                    <hr class="vertical_hr">
+                    <div class="outer_box">
+                        <img src="images/python.png" alt="" class="skill_imgs">
+                    </div>
                 </div>
             </div>
 
+        </div>
+        <div class="line_break" id="projects">
+            <hr class="hrs">
+            <div class="capsule">
+                |
+            </div>
+            <hr class="hrs">
+        </div>
+        <div class="my_projects">
+            <h1 class="projects_h1">
+                My Projects
+            </h1>
+            <div class="project_container">
+
+                <div class="project_content_box">
+                    <div class="project_img_box">
+                        <img class="project_imgs" src="images/petuk.png" alt="">
+                    </div>
+
+                    <div class="popup">
+                        Petuk Ji: ONDC Startup Website
+                        <div class="links">
+                            <a href="https://github.com/Subhamk2004/petuk-ji">
+                                <img class="link" src="images/github.png" alt="">
+                            </a>
+                            <a href="https://petukji.in/">
+                                <img src="images/share.png" alt="" class="link">
+                            </a>
+                        </div>
+                        <p>Created the website for Petuk Ji, an ONDC startup. Users can easily browse menus, place
+                            orders, and track deliveries. Built with HTML, CSS, JS, and React.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project_content_box">
+                    <div class="project_img_box">
+                        <img class="project_imgs" src="images/calculator.png" alt="">
+                    </div>
+
+                    <div class="popup">
+                        Calculator
+                        <div class="links">
+                            <a href="https://github.com/Subhamk2004/Calculator">
+                                <img class="link" src="images/github.png" alt="">
+                            </a>
+                            <a href="https://subhamk2004.github.io/Calculator/">
+                                <img src="images/share.png" alt="" class="link">
+                            </a>
+                        </div>
+                        <p>Built a calculator web app with HTML, CSS, JS.
+                            Includes basic arithematic operations with modulus function, accepts
+                            user inputs and performs operations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project_content_box">
+                    <div class="project_img_box">
+                        <img class="project_imgs" src="images/cross_zero.png" alt="">
+                    </div>
+
+                    <div class="popup">
+                        Tic-tac-toe
+                        <div class="links">
+                            <a href="https://github.com/Subhamk2004/testreactapp">
+                                <img class="link" src="images/github.png" alt="">
+                            </a>
+                            <a href="https://subhamk2004.github.io/testreactapp/">
+                                <img src="images/share.png" alt="" class="link">
+                            </a>
+                        </div>
+                        <p>Built a Tic-tac-toe game with React, HTML, CSS, JS.
+                            It has basic function to tell winner, turn teller, restart game etc.
+                            Beside them games includes amazoing sounds making it interactive and fun
+                            to play
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project_content_box">
+                    <div class="project_img_box">
+                        <img class="project_imgs" src="images/quiz.png" alt="">
+                    </div>
+
+                    <div class="popup">
+                        Quiz App
+                        <div class="links">
+                            <a href="https://github.com/Subhamk2004/Quiz-App">
+                                <img class="link" src="images/github.png" alt="">
+                            </a>
+                            <a href="https://subhamk2004.github.io/Quiz-App/">
+                                <img src="images/share.png" alt="" class="link">
+                            </a>
+                        </div>
+                        <p>Built an easy-to-use quiz app. Users select categories, answer
+                            questions, tracks scores and displays results. Developed with
+                            HTML, CSS, and JavaScript.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project_content_box">
+                    <div class="project_img_box">
+                        <img class="project_imgs" src="images/weather.png" alt="">
+                    </div>
+
+                    <div class="popup">
+                        Weather App
+                        <div class="links">
+                            <a href="https://github.com/Subhamk2004/Weather-app">
+                                <img class="link" src="images/github.png" alt="">
+                            </a>
+                            <a href="https://subhamk2004.github.io/Weather-app/">
+                                <img src="images/share.png" alt="" class="link">
+                            </a>
+                        </div>
+                        <p>Created a simple weather app for real-time forecasts. Users check current
+                            conditions, hourly updates. Includes location search.
+                            Built with HTML, CSS, JS, and API integration.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project_content_box">
+                    <div class="project_img_box">
+                        <img class="project_imgs" src="images/quote_generator.png" alt="">
+                    </div>
+
+                    <div class="popup">
+                        Random Quote Generator
+                        <div class="links">
+                            <a href="https://github.com/Subhamk2004/Random-Quote-Generator">
+                                <img class="link" src="images/github.png" alt="">
+                            </a>
+                            <a href="https://subhamk2004.github.io/Random-Quote-Generator/">
+                                <img src="images/share.png" alt="" class="link">
+                            </a>
+                        </div>
+                        <p>Built a simple app displaying random quotes with authors. Users can click for
+                            new quotes. Minimalist design. Developed using HTML, CSS, JS, and API
+                            integration.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="line_break" id="contact">
+            <hr class="hrs">
+            <div class="capsule">
+                |
+            </div>
+            <hr class="hrs">
+        </div>
+
+        <div class="follow">
+            <h1 class="follow_h1">
+                Follow Me on Below Socials <code>;)</code>
+            </h1>
+            <div class="socials_box">
+                <a href="https://github.com/Subhamk2004">
+                    <img src="images/github.png" alt="" class="socials">
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/subham-kumar-73b98b252?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiKUH72wFQUK9ZmVhPQw3eg%3D%3D">
+                    <img src="images/in.png" alt="" class="socials">
+                </a>
+                <a href="subhamkumarjobinfo@gmail.com">
+                    <img src="images/gmail.png" alt="" class="socials">
+                </a>
+                <a href="https://www.hackerrank.com/profile/subhamk1978">
+                    <img src="images/hack.png" alt="" class="socials">
+                </a>
+
+            </div>
         </div>
     </div>
 </body>
